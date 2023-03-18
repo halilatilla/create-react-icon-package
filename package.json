@@ -16,7 +16,7 @@
     "prebuild": "rimraf src && rimraf dist",
     "build": "npm run svgr && rollup -c",
     "svgr": "svgr -d src icons",
-    "semantic-release": "semantic-release --branches next",
+    "semantic-release": "semantic-release --branches main",
     "cz": "git-cz",
     "publish-cz": "git add . && npm run cz && git push",
     "build-publish": "npm run build && git add . && npm run cz && git push"
