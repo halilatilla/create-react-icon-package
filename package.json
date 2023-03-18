@@ -50,5 +50,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/halilatilla/create-react-icon-package.git"
-  }
+  },
+  "branches": [
+    "main",
+    "next"
+  ]
 }
