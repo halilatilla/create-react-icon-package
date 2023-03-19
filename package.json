@@ -5,7 +5,10 @@
   "keywords": [
     "React",
     "SVG",
-    "Icons"
+    "Icon",
+    "Rollup",
+    "Semantic release",
+    "conventional commits"
   ],
   "main": "dist/index.js",
   "files": [

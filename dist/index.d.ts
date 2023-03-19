@@ -6,4 +6,4 @@ interface SVGRProps {
     titleId?: string;
 }
 declare const Memo: React.MemoExoticComponent<({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps) => JSX.Element>;
-export { Memo as IconAdminTest };
+export { Memo as IconAdmin };
