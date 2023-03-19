@@ -8,7 +8,8 @@
     "Icon",
     "Rollup",
     "Semantic release",
-    "conventional commits"
+    "Conventional commits",
+    "Github actions"
   ],
   "main": "dist/index.js",
   "files": [
