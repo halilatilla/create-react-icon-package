@@ -23,21 +23,32 @@ Before using this package, ensure you have:
 
 ## **Installation**
 
-To install the **`create-react-icon-package`**, run the following command:
+To use `create-react-icon-package` as a template for your own React icon package, clone this GitHub repository to your local machine:
 
 ```
-npm install create-react-icon-package
+git clone https://github.com/halilatilla/create-react-icon-package.git my-icon-package
 ```
+This command will create a new folder called my-icon-package with the necessary files and configurations.
 
 ## **Usage**
 
-After installation, use the following command to generate a new React icon package:
+After cloning the repository, follow these steps to set up and customize your React icon package:
+
+
+Navigate to the newly created folder:
 
 ```
-npx create-react-icon-package my-icon-package
+cd my-icon-package
 ```
 
-This command will create a new folder called **`my-icon-package`** with the necessary files and configurations to start building your custom icon package.
+Install the dependencies:
+
+```
+npm install
+```
+
+
+Now you can start customizing your React icon package.
 
 ## **Customizing Your Icon Set**
 
