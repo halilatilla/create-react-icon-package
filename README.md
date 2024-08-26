@@ -1,89 +1,82 @@
-# **Create React Icon Package**
+# Create React Icon Package
 
-Create your own customizable SVG-based React icon package with **`create-react-icon-package`**. This package allows you to easily generate a custom SVG-based React icon package tailored to your needs, streamlining the process of creating, organizing, and distributing your own icon set for use in your React applications.
+Create your own customizable SVG-based React icon package with `create-react-icon-package`. This powerful tool simplifies the process of generating, organizing, and distributing your custom icon set for React applications.
 
-## **Table of Contents**
+## Table of Contents
 
-1. [Prerequisites](#prerequisites)
-2. [Installation](#installation)
-3. [Usage](#usage)
+1. [Features](#features)
+2. [Prerequisites](#prerequisites)
+3. [Quick Start](#quick-start)
 4. [Customizing Your Icon Set](#customizing-your-icon-set)
-5. [Semantic Versioning and Publishing with GitHub Actions](#semantic-versioning-and-publishing-with-github-actions)
-6. [Setting up NPM_TOKEN and GITHUB_TOKEN](#setting-up-npm_token-and-github_token)
-7. [Using Semantic Release for Automatic Versioning and Publishing](#using-semantic-release-for-automatic-versioning-and-publishing)
-8. [Contributing](#contributing)
+5. [Automatic Versioning and Publishing](#automatic-versioning-and-publishing)
+6. [Contributing](#contributing)
+7. [License](#license)
 
-## **Prerequisites**
+## Features
 
-Before using this package, ensure you have:
+- Easy setup and configuration
+- SVG to React component conversion
+- Automatic versioning with Semantic Release
+- GitHub Actions integration for CI/CD
+- npm publishing automation
 
-- A basic understanding of React
+## Prerequisites
+
+- Basic understanding of React
 - Familiarity with npm and SVG icons
 - Node.js and npm installed on your system
 
-## **Installation**
+## Quick Start
 
-To use `create-react-icon-package` as a template for your own React icon package, clone this GitHub repository to your local machine:
+1. Clone the repository:
 
-```
-git clone https://github.com/halilatilla/create-react-icon-package.git my-icon-package
-```
-This command will create a new folder called my-icon-package with the necessary files and configurations.
+   ```
+   git clone https://github.com/halilatilla/create-react-icon-package.git my-icon-package
+   ```
 
-## **Usage**
+2. Navigate to the project folder:
 
-After cloning the repository, follow these steps to set up and customize your React icon package:
+   ```
+   cd my-icon-package
+   ```
 
+3. Install dependencies:
 
-Navigate to the newly created folder:
+   ```
+   npm install
+   ```
 
-```
-cd my-icon-package
-```
+4. Start customizing your icon package!
 
-Install the dependencies:
+## Customizing Your Icon Set
 
-```
-npm install
-```
+1. Place your SVG icons in the `icons` folder.
+2. Run the build command to generate React components:
+   ```
+   npm run build
+   ```
+3. Find your compiled components in the `dist` directory.
 
+## Automatic Versioning and Publishing
 
-Now you can start customizing your React icon package.
+This package uses Semantic Release and GitHub Actions for automatic versioning and publishing to npm.
 
-## **Customizing Your Icon Set**
+### Setting up tokens
 
-Inside the **`my-icon-package`** folder, you'll find a folder named **`icons`**. Place your SVG icons within this folder, then run the following command to build your React icon components:
+1. Create an npm account and generate an access token with "Read and Publish" permissions.
+2. In your GitHub repository, go to Settings > Secrets.
+3. Add the `NPM_TOKEN` secret with your npm access token.
+4. The `GITHUB_TOKEN` is automatically provided by GitHub Actions.
 
-```
-npm run build
-```
+### Publishing workflow
 
-This command will generate React components for each SVG file within the **`icons`** folder and compile them into the **`dist`** directory.
+- Each push to the "main" branch triggers the versioning and publishing process.
+- Your package will be automatically published to npm with an appropriate version number based on your commit messages.
 
-## **Semantic Versioning and Publishing with GitHub Actions**
+## Contributing
 
-The generated React icon package is configured to use Semantic Release and GitHub Actions for automatic versioning and publishing to npm. To set this up, follow these steps:
+We welcome contributions! Please feel free to submit issues and pull requests on the [GitHub repository](https://github.com/halilatilla/create-react-icon-package).
 
-1. Push your icon package to a new GitHub repository.
-2. Create an npm account and obtain an npm access token.
-3. Add the **`NPM_TOKEN`** and **`GITHUB_TOKEN`** as secrets to your GitHub repository.
+## License
 
-## **Setting up NPM_TOKEN and GITHUB_TOKEN**
-
-1. Log in to your npm account and navigate to the **[access tokens](https://www.npmjs.com/settings/%3Cyour-username%3E/tokens)** page.
-2. Create a new token with "Read and Publish" permissions.
-3. In your GitHub repository, navigate to the "Settings" tab and then to "Secrets".
-4. Add the **`NPM_TOKEN`** secret using the token you generated from npm.
-5. The **`GITHUB_TOKEN`** is automatically generated by GitHub, and you don't need to set it up manually.
-
-## **Using Semantic Release for Automatic Versioning and Publishing**
-
-With GitHub Actions, the **`GITHUB_TOKEN`** and **`NPM_TOKEN`** environment variables are set up to automatically version and publish your project to npm. As a result, each push to the "main" branch will initiate the process of versioning and publishing your package to npm.
-
-## **Contributing**
-
-If you would like to contribute to the **`create-react-icon-package`** project, feel free to submit issues and pull requests on the **[GitHub repository](https://github.com/halilatilla/create-react-icon-package)**.
-
-## **License**
-
-MIT License. See the **[LICENSE](https://chat.openai.com/LICENSE)** file for more information.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
